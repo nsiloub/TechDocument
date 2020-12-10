@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation - NSILOU Persévérance</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div id="logo-search">
+            <div class="ubuntu-icon">
+                <?xml version="1.0" encoding="iso-8859-1"?>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 130 49" enable-background="new 0 0 130 49" xml:space="preserve">
+                <g id="ubuntu-icon">
+                    <g id="white-around">
+                        <defs>
+                            <rect id="SVGID_1_" x="109" y="2" width="19" height="19"/>
+                        </defs>
+                        <clipPath id="SVGID_2_">
+                            <use xlink:href="#SVGID_1_"  overflow="visible"/>
+                        </clipPath>
+                        <circle clip-path="url(#SVGID_2_)" fill="#FFFFFF" cx="118.5" cy="11.5" r="9.5"/>
+                    </g>
+                    <path id="shapes" fill="#902D0C" d="M111.437,10.114c-0.763,0-1.386,0.618-1.386,1.386c0,0.763,0.618,1.386,1.386,1.386
+                        c0.763,0,1.386-0.618,1.386-1.386C112.819,10.737,112.2,10.114,111.437,10.114 M121.072,16.318c-0.66,0.384-0.89,1.227-0.506,1.892
+                        c0.384,0.66,1.227,0.89,1.892,0.506c0.66-0.384,0.89-1.227,0.506-1.892C122.579,16.164,121.737,15.939,121.072,16.318z
+                        M114.365,11.501c0-1.367,0.679-2.576,1.719-3.311l-1.011-1.695c-1.213,0.81-2.112,2.046-2.487,3.498
+                        c0.436,0.356,0.716,0.899,0.716,1.508c0,0.609-0.281,1.152-0.716,1.508c0.375,1.452,1.274,2.688,2.487,3.498l1.011-1.695
+                        C115.044,14.076,114.365,12.868,114.365,11.501z M118.411,7.455c2.112,0,3.845,1.62,4.027,3.685l1.971-0.028
+                        c-0.098-1.527-0.763-2.894-1.789-3.901c-0.524,0.197-1.133,0.169-1.662-0.136c-0.524-0.304-0.857-0.815-0.946-1.372
+                        c-0.51-0.14-1.049-0.22-1.606-0.22c-0.955,0-1.864,0.225-2.665,0.623l0.96,1.723C117.226,7.59,117.802,7.455,118.411,7.455z
+                        M118.411,15.546c-0.609,0-1.185-0.136-1.705-0.375l-0.96,1.723c0.805,0.398,1.709,0.623,2.665,0.623
+                        c0.557,0,1.096-0.075,1.606-0.22c0.089-0.557,0.421-1.068,0.946-1.372s1.133-0.332,1.662-0.136c1.026-1.007,1.69-2.379,1.789-3.901
+                        l-1.971-0.028C122.256,13.926,120.523,15.546,118.411,15.546z M121.207,6.682c0.66,0.384,1.508,0.155,1.892-0.506
+                        c0.384-0.66,0.155-1.508-0.506-1.892c-0.66-0.384-1.508-0.155-1.892,0.506C120.317,5.45,120.547,6.298,121.207,6.682z"/>
+                </g>
+                <g id="ubuntu">
+                    <g id="ubuntu-text">
+                        <path fill="#FFFFFF" d="M16.04,43.278c-1.824,0-3.288-0.504-4.392-1.512c-1.104-1.008-1.656-2.484-1.656-4.428
+                            c0-1.128,0.162-2.37,0.486-3.726c0.324-1.355,0.702-2.754,1.134-4.194s0.815-2.832,1.152-4.176
+                            c0.336-1.344,0.504-2.556,0.504-3.636c0-0.864-0.168-1.476-0.504-1.836c-0.336-0.36-0.792-0.54-1.368-0.54
+                            c-0.864,0-1.554,0.462-2.07,1.386s-0.774,2.142-0.774,3.654c0,0.672,0.072,1.326,0.216,1.962c0.144,0.636,0.396,1.326,0.756,2.07
+                            c-0.313,0.313-0.679,0.535-1.098,0.666c-0.42,0.132-0.81,0.198-1.17,0.198c-0.913,0-1.705-0.21-2.376-0.63
+                            c-0.672-0.42-1.176-0.99-1.512-1.71c-0.336-0.72-0.504-1.524-0.504-2.412c0-0.888,0.186-1.782,0.558-2.682
+                            c0.372-0.9,0.93-1.722,1.674-2.466c0.744-0.744,1.698-1.338,2.862-1.782c1.164-0.444,2.538-0.666,4.122-0.666
+                            c1.416,0,2.646,0.21,3.69,0.63c1.044,0.42,1.859,1.044,2.448,1.872c0.588,0.828,0.882,1.854,0.882,3.078
+                            c0,1.08-0.144,2.262-0.432,3.546c-0.288,1.284-0.625,2.586-1.008,3.906c-0.384,1.32-0.72,2.61-1.008,3.87
+                            c-0.288,1.26-0.432,2.394-0.432,3.402c0,0.912,0.228,1.614,0.684,2.106c0.456,0.492,1.008,0.738,1.656,0.738
+                            c0.816,0,1.548-0.275,2.196-0.828s1.193-1.296,1.638-2.232c0.444-0.936,0.774-2.003,0.99-3.204l1.98-11.196
+                            c0.288-1.512,0.822-2.622,1.602-3.33c0.78-0.708,1.733-1.062,2.862-1.062c0.408,0,0.834,0.042,1.278,0.126
+                            c0.444,0.084,0.905,0.21,1.386,0.378L29.18,36.006c-0.096,0.504-0.168,0.949-0.216,1.332c-0.048,0.384-0.072,0.744-0.072,1.08
+                            c0,0.769,0.144,1.404,0.432,1.908c0.288,0.504,0.78,0.804,1.476,0.9c-0.432,0.648-1.026,1.152-1.782,1.512
+                            c-0.756,0.36-1.518,0.54-2.286,0.54c-0.913,0-1.698-0.276-2.358-0.828c-0.661-0.552-1.075-1.344-1.242-2.376
+                            c-0.864,1.032-1.938,1.824-3.222,2.376C18.626,43.002,17.337,43.278,16.04,43.278z"/>
+                        <path fill="#FFFFFF" d="M41.204,43.242c-0.768,0-1.638-0.072-2.61-0.216s-1.914-0.378-2.826-0.702
+                            c-0.912-0.324-1.692-0.761-2.34-1.314l2.988-15.12l5.148,0.36c0.624-0.84,1.41-1.518,2.358-2.034
+                            c0.948-0.516,2.021-0.774,3.222-0.774c1.296,0,2.34,0.294,3.132,0.882c0.792,0.588,1.368,1.411,1.728,2.466
+                            c0.36,1.056,0.54,2.268,0.54,3.636c0,1.752-0.247,3.396-0.738,4.932c-0.492,1.536-1.212,2.898-2.16,4.086
+                            c-0.949,1.188-2.13,2.119-3.546,2.79C44.684,42.906,43.052,43.242,41.204,43.242z M41.564,27.042l-5.328-0.252
+                            c0.216-1.008,0.408-2.04,0.576-3.096c0.167-1.056,0.312-2.093,0.432-3.114c0.12-1.02,0.204-1.962,0.252-2.826
+                            c0.024-0.288,0.03-0.563,0.018-0.828c-0.012-0.264-0.018-0.516-0.018-0.756c0.48-0.288,0.99-0.492,1.53-0.612
+                            s1.049-0.18,1.53-0.18c0.864,0,1.596,0.222,2.196,0.666c0.6,0.444,0.9,1.194,0.9,2.25c0,0.672-0.09,1.47-0.27,2.394
+                            c-0.18,0.924-0.426,1.926-0.738,3.006S41.972,25.89,41.564,27.042z M41.888,41.082c0.648,0,1.224-0.252,1.728-0.756
+                            c0.504-0.504,0.954-1.176,1.35-2.016c0.396-0.84,0.726-1.764,0.99-2.772c0.264-1.008,0.462-2.028,0.594-3.06
+                            c0.132-1.032,0.198-1.98,0.198-2.844c0-1.175-0.114-2.07-0.342-2.682c-0.229-0.612-0.702-0.918-1.422-0.918
+                            c-0.6,0-1.122,0.192-1.566,0.576c-0.444,0.384-0.816,0.87-1.116,1.458c-0.3,0.588-0.546,1.212-0.738,1.872
+                            c-0.192,0.661-0.336,1.266-0.432,1.818l-1.584,8.532c0.336,0.264,0.72,0.462,1.152,0.594
+                            C41.132,41.016,41.528,41.082,41.888,41.082z"/>
+                        <path fill="#FFFFFF" d="M59.564,43.242c-1.08,0-2.016-0.187-2.808-0.558c-0.792-0.372-1.392-0.93-1.8-1.674
+                            c-0.408-0.744-0.612-1.656-0.612-2.736c0-0.624,0.083-1.488,0.252-2.592c0.167-1.104,0.426-2.586,0.774-4.446
+                            c0.348-1.859,0.786-4.217,1.314-7.074l6.084-0.612c-0.504,2.544-0.924,4.674-1.26,6.39c-0.336,1.716-0.612,3.132-0.828,4.248
+                            c-0.216,1.116-0.366,2.016-0.45,2.7c-0.084,0.684-0.126,1.266-0.126,1.746c0,0.409,0.042,0.792,0.126,1.152
+                            c0.084,0.36,0.246,0.648,0.486,0.864c0.24,0.216,0.588,0.324,1.044,0.324c0.72,0,1.319-0.258,1.8-0.774
+                            c0.48-0.516,0.858-1.158,1.134-1.926c0.276-0.768,0.474-1.512,0.594-2.232l2.16-11.88l6.12-0.612l-2.736,14.184
+                            c-0.024,0.192-0.06,0.432-0.108,0.72c-0.048,0.288-0.072,0.552-0.072,0.792c0,0.408,0.12,0.774,0.36,1.098
+                            c0.239,0.324,0.612,0.51,1.116,0.558c-0.144,0.528-0.426,0.966-0.846,1.314c-0.42,0.348-0.895,0.606-1.422,0.774
+                            s-1.068,0.252-1.62,0.252c-0.745,0-1.417-0.168-2.016-0.504c-0.6-0.335-0.996-0.852-1.188-1.548
+                            c-0.576,0.696-1.368,1.212-2.376,1.548C61.652,43.074,60.619,43.242,59.564,43.242z"/>
+                        <path fill="#FFFFFF" d="M89.552,43.242c-1.056,0-1.914-0.27-2.574-0.81c-0.661-0.54-0.99-1.386-0.99-2.538
+                            c0-0.528,0.078-1.188,0.234-1.98c0.156-0.792,0.335-1.638,0.54-2.538s0.408-1.8,0.612-2.7c0.204-0.9,0.384-1.74,0.54-2.52
+                            c0.156-0.779,0.234-1.422,0.234-1.926c0-0.576-0.126-1.056-0.378-1.44c-0.252-0.384-0.666-0.576-1.242-0.576
+                            c-0.744,0-1.368,0.3-1.872,0.9c-0.504,0.601-0.906,1.338-1.206,2.214c-0.301,0.876-0.546,1.734-0.738,2.574l-2.052,10.62
+                            l-6.12,0.612l3.744-18.972l5.004-0.612l-0.54,3.42c0.671-1.248,1.571-2.148,2.7-2.7c1.128-0.552,2.364-0.828,3.708-0.828
+                            c1.536,0,2.742,0.342,3.618,1.026c0.876,0.684,1.314,1.759,1.314,3.222c0,0.625-0.072,1.344-0.216,2.16s-0.318,1.668-0.522,2.556
+                            c-0.204,0.888-0.409,1.752-0.612,2.592c-0.204,0.84-0.378,1.62-0.522,2.34C92.072,38.058,92,38.646,92,39.102
+                            c0,0.504,0.108,0.912,0.324,1.224c0.216,0.312,0.6,0.504,1.152,0.576c-0.216,0.816-0.708,1.41-1.476,1.782
+                            C91.231,43.056,90.416,43.242,89.552,43.242z"/>
+                        <path fill="#FFFFFF" d="M100.46,43.242c-0.984,0-1.842-0.276-2.574-0.828c-0.732-0.552-1.098-1.368-1.098-2.448
+                            c0-0.479,0.06-1.11,0.18-1.89c0.12-0.78,0.264-1.614,0.432-2.502c0.167-0.887,0.335-1.74,0.504-2.556
+                            c0.167-0.816,0.3-1.464,0.396-1.944l1.044-5.292h-2.268l0.144-1.08c1.32-0.432,2.64-1.014,3.96-1.746
+                            c1.32-0.732,2.58-1.59,3.78-2.574h1.512l-0.828,3.78h2.808l-0.324,1.62h-2.808l-2.232,11.448
+                            c-0.048,0.336-0.096,0.654-0.144,0.954c-0.048,0.3-0.072,0.594-0.072,0.882c-0.024,0.792,0.15,1.309,0.522,1.548
+                            c0.372,0.24,0.918,0.288,1.638,0.144c-0.288,0.672-0.678,1.188-1.17,1.548c-0.492,0.36-1.026,0.605-1.602,0.738
+                            C101.683,43.176,101.083,43.242,100.46,43.242z"/>
+                        <path fill="#FFFFFF" d="M113.132,43.242c-1.08,0-2.016-0.187-2.808-0.558c-0.792-0.372-1.392-0.93-1.8-1.674
+                            c-0.408-0.744-0.612-1.656-0.612-2.736c0-0.624,0.083-1.488,0.252-2.592c0.167-1.104,0.426-2.586,0.774-4.446
+                            c0.348-1.859,0.786-4.217,1.314-7.074l6.084-0.612c-0.504,2.544-0.924,4.674-1.26,6.39c-0.336,1.716-0.612,3.132-0.828,4.248
+                            c-0.216,1.116-0.366,2.016-0.45,2.7c-0.084,0.684-0.126,1.266-0.126,1.746c0,0.409,0.042,0.792,0.126,1.152
+                            c0.084,0.36,0.246,0.648,0.486,0.864c0.24,0.216,0.588,0.324,1.044,0.324c0.72,0,1.319-0.258,1.8-0.774
+                            c0.48-0.516,0.858-1.158,1.134-1.926c0.276-0.768,0.474-1.512,0.594-2.232l2.16-11.88l6.12-0.612L124.4,37.734
+                            c-0.024,0.192-0.06,0.432-0.108,0.72c-0.048,0.288-0.072,0.552-0.072,0.792c0,0.408,0.12,0.774,0.36,1.098
+                            c0.239,0.324,0.612,0.51,1.116,0.558c-0.144,0.528-0.426,0.966-0.846,1.314c-0.42,0.348-0.895,0.606-1.422,0.774
+                            s-1.068,0.252-1.62,0.252c-0.745,0-1.417-0.168-2.016-0.504c-0.6-0.335-0.996-0.852-1.188-1.548
+                            c-0.576,0.696-1.368,1.212-2.376,1.548C115.219,43.074,114.187,43.242,113.132,43.242z"/>
+                    </g>
+                </g>
+                <g id="perseverance">
+                    <g>
+                        <path fill="#FFFFFF" d="M44.372,5.805c0.322-0.053,0.742-0.099,1.278-0.099c0.658,0,1.14,0.153,1.446,0.428
+                            c0.283,0.245,0.452,0.62,0.452,1.079c0,0.467-0.138,0.834-0.398,1.102c-0.352,0.375-0.926,0.566-1.576,0.566
+                            c-0.199,0-0.383-0.007-0.536-0.046v2.066h-0.666V5.805z M45.038,8.292c0.146,0.038,0.329,0.053,0.551,0.053
+                            c0.803,0,1.293-0.39,1.293-1.102c0-0.681-0.482-1.01-1.217-1.01c-0.291,0-0.513,0.023-0.627,0.054V8.292z"/>
+                        <path fill="#FFFFFF" d="M48.602,9.172c0.015,0.911,0.597,1.286,1.27,1.286c0.482,0,0.773-0.084,1.025-0.192l0.115,0.482
+                            c-0.237,0.107-0.643,0.229-1.232,0.229c-1.14,0-1.821-0.75-1.821-1.867c0-1.118,0.658-1.997,1.737-1.997
+                            c1.209,0,1.531,1.064,1.531,1.745c0,0.138-0.015,0.245-0.023,0.314H48.602z M50.576,8.69c0.007-0.429-0.176-1.095-0.934-1.095
+                            c-0.681,0-0.98,0.628-1.033,1.095H50.576z"/>
+                        <path fill="#FFFFFF" d="M52.059,8.353c0-0.436-0.007-0.811-0.03-1.156h0.589l0.023,0.727h0.031
+                            c0.168-0.497,0.574-0.811,1.025-0.811c0.076,0,0.13,0.007,0.191,0.023v0.635c-0.069-0.015-0.138-0.023-0.229-0.023
+                            c-0.474,0-0.811,0.36-0.903,0.865c-0.015,0.092-0.03,0.199-0.03,0.314v1.974h-0.666V8.353z"/>
+                        <path fill="#FFFFFF" d="M54.468,10.213c0.199,0.13,0.551,0.268,0.888,0.268c0.49,0,0.719-0.245,0.719-0.551
+                            c0-0.321-0.191-0.497-0.689-0.681c-0.666-0.237-0.98-0.604-0.98-1.048c0-0.597,0.482-1.087,1.278-1.087
+                            c0.375,0,0.704,0.107,0.911,0.229l-0.169,0.49c-0.146-0.092-0.413-0.214-0.758-0.214c-0.398,0-0.62,0.229-0.62,0.505
+                            c0,0.306,0.222,0.444,0.704,0.627c0.643,0.245,0.972,0.567,0.972,1.118c0,0.65-0.505,1.109-1.385,1.109
+                            c-0.405,0-0.781-0.099-1.041-0.252L54.468,10.213z"/>
+                        <path fill="#FFFFFF" d="M57.963,9.172c0.015,0.911,0.597,1.286,1.27,1.286c0.482,0,0.773-0.084,1.025-0.192l0.115,0.482
+                            c-0.237,0.107-0.643,0.229-1.232,0.229c-1.14,0-1.821-0.75-1.821-1.867c0-1.118,0.658-1.997,1.737-1.997
+                            c1.209,0,1.531,1.064,1.531,1.745c0,0.138-0.015,0.245-0.023,0.314H57.963z M59.938,8.69c0.007-0.429-0.176-1.095-0.934-1.095
+                            c-0.681,0-0.98,0.628-1.033,1.095H59.938z M60.098,5.598l-0.934,1.094h-0.482l0.673-1.094H60.098z"/>
+                        <path fill="#FFFFFF" d="M61.68,7.198l0.727,2.081c0.123,0.337,0.222,0.643,0.299,0.949h0.023c0.084-0.306,0.191-0.612,0.314-0.949
+                            l0.719-2.081h0.704l-1.454,3.704h-0.643l-1.408-3.704H61.68z"/>
+                        <path fill="#FFFFFF" d="M65.397,9.172c0.015,0.911,0.597,1.286,1.27,1.286c0.482,0,0.773-0.084,1.025-0.192l0.115,0.482
+                            c-0.237,0.107-0.643,0.229-1.232,0.229c-1.14,0-1.821-0.75-1.821-1.867c0-1.118,0.658-1.997,1.737-1.997
+                            c1.209,0,1.531,1.064,1.531,1.745c0,0.138-0.015,0.245-0.023,0.314H65.397z M67.371,8.69c0.007-0.429-0.176-1.095-0.934-1.095
+                            c-0.681,0-0.98,0.628-1.033,1.095H67.371z M67.532,5.598l-0.934,1.094h-0.482l0.674-1.094H67.532z"/>
+                        <path fill="#FFFFFF" d="M68.853,8.353c0-0.436-0.007-0.811-0.03-1.156h0.589l0.023,0.727h0.031
+                            c0.168-0.497,0.574-0.811,1.025-0.811c0.076,0,0.13,0.007,0.191,0.023v0.635c-0.069-0.015-0.138-0.023-0.229-0.023
+                            c-0.474,0-0.811,0.36-0.903,0.865c-0.015,0.092-0.03,0.199-0.03,0.314v1.974h-0.666V8.353z"/>
+                        <path fill="#FFFFFF" d="M73.367,10.901l-0.053-0.467h-0.023c-0.207,0.291-0.604,0.551-1.133,0.551
+                            c-0.75,0-1.133-0.528-1.133-1.064c0-0.895,0.796-1.385,2.227-1.378V8.468c0-0.306-0.084-0.857-0.842-0.857
+                            c-0.344,0-0.704,0.107-0.964,0.276l-0.153-0.444c0.306-0.199,0.75-0.329,1.217-0.329c1.133,0,1.408,0.773,1.408,1.515v1.385
+                            c0,0.322,0.015,0.635,0.061,0.888H73.367z M73.268,9.011c-0.735-0.015-1.569,0.115-1.569,0.834c0,0.436,0.291,0.642,0.635,0.642
+                            c0.482,0,0.788-0.306,0.895-0.619c0.023-0.069,0.038-0.146,0.038-0.214V9.011z"/>
+                        <path fill="#FFFFFF" d="M75.003,8.2c0-0.383-0.007-0.697-0.03-1.002h0.597l0.038,0.612h0.015c0.184-0.352,0.612-0.696,1.224-0.696
+                            c0.513,0,1.309,0.306,1.309,1.577v2.211h-0.674V8.766c0-0.597-0.222-1.094-0.857-1.094c-0.444,0-0.788,0.314-0.903,0.689
+                            c-0.03,0.084-0.046,0.199-0.046,0.314v2.227h-0.673V8.2z"/>
+                        <path fill="#FFFFFF" d="M81.888,10.764c-0.176,0.092-0.567,0.214-1.064,0.214c-1.117,0-1.844-0.758-1.844-1.89
+                            c0-1.141,0.781-1.967,1.989-1.967c0.398,0,0.75,0.1,0.934,0.192l-0.153,0.52c-0.161-0.092-0.413-0.176-0.781-0.176
+                            c-0.849,0-1.308,0.627-1.308,1.4c0,0.857,0.551,1.385,1.285,1.385c0.383,0,0.635-0.099,0.827-0.184L81.888,10.764z"/>
+                        <path fill="#FFFFFF" d="M83.003,9.172c0.015,0.911,0.597,1.286,1.27,1.286c0.482,0,0.773-0.084,1.025-0.192l0.115,0.482
+                            c-0.237,0.107-0.643,0.229-1.232,0.229c-1.14,0-1.821-0.75-1.821-1.867c0-1.118,0.658-1.997,1.737-1.997
+                            c1.209,0,1.531,1.064,1.531,1.745c0,0.138-0.015,0.245-0.023,0.314H83.003z M84.978,8.69c0.007-0.429-0.176-1.095-0.934-1.095
+                            c-0.681,0-0.98,0.628-1.033,1.095H84.978z"/>
+                    </g>
+                </g>
+                </svg>
+            </div>
+            <a href="#top">
+                <button class="back-to-top">Back to TABLE OF CONTENT</button>
+            </a>
+            <form action="https://twitter.com/nsiloubp" target="_blank">
+                <label for="search">
+                    <input id="search"
+                    type="search"
+                    placeholder="Search tutorials"
+                    required>
+                    <input
+                    id="search" 
+                    type="submit"
+                    value="GO"
+                    >
+                </label>
+            </form>
+        </div>
+
+        <div class="my-doc">
+            <nav id="navbar">
+                <header class="main-header">Installation / FromLinux<br>
+                        DOCUMENTATION</header>
+                <div class="tableDmat">
+                    <p>TABLE OF CONTENT</p>
+                    <ol >
+
+                        <li>
+                            <a class="nav-link" href="#Guide_Introduction">Guide Introduction</a>
+                        </li>
+
+                        <li>
+                            <a class="nav-link" href="#Live_Ubuntu_Desktop_from_Hard_Drive">Live Ubuntu Desktop from Hard Drive</a>
+                            <ul>
+                                <li><a class="nav-link" href="#Step-1_Partition">Step-1 Partition</a></li>
+                                <li><a class="nav-link" href="#Step-2_Copy">Step-2 Copy</a></li>
+                                <li><a class="nav-link" href="#Step-3_Grub">Step-3 Grub</a></li>
+                                <li><a class="nav-link" href="#Step-4_Reboot">Step-4 Reboot</a></li>
+                                <li><a class="nav-link" href="#Step-5_Grub_(again)">Step-5 Grub (again)</a></li>
+                                <li><a class="nav-link" href="#Older_Versions_of_Ubuntu">Older Versions of Ubuntu</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a class="nav-link" href="#Debootstrap">Debootstrap</a></li>
+
+                        <li>
+                            <a class="nav-link" href="#Alternate_CD">Alternate CD</a>
+                            <ul>
+                                <li><a class="nav-link" href="#Procedure_1">Procedure 1</a></li>
+                                <li><a class="nav-link" href="#Procedure_2">Procedure 2</a></li>        
+                            </ul>
+                        </li>
+
+                        <li><a class="nav-link" href="#Alternate_CD_Alternate_Method">Alternate CD Alternate Method</a></li>
+
+                        <li><a class="nav-link" href="#Troubleshooting">Troubleshooting</a></li>
+                    </ol>
+                </div>
+            </nav>  
+
+            <main id="main-doc">
+                <div id="top">
+                    <h3>Installation / FromLinux<br>
+                        complete<br> DOCUMENTATION
+                    </h3>
+                    <p> TABLE OF CONTENT</p>
+                    <form action="https://twitter.com/nsiloubp" target="_blank">
+                        <label for="search">
+                            <input id="search"
+                            type="search"
+                            placeholder="Search tutorials"
+                            required>
+                            <input
+                            id="go" 
+                            type="submit"
+                            value="GO"
+                            >
+                        </label>
+                    </form>
+        
+                    <div class="top-table">
+                        <ol >
+
+                            <li>
+                                <a  href="#Guide_Introduction">Guide Introduction</a>
+                            </li>
+
+                            <li>
+                                <a  href="#Live_Ubuntu_Desktop_from_Hard_Drive">Live Ubuntu Desktop from Hard Drive</a>
+                                <ul>
+                                    <li><a  href="#Step-1_Partition">Step-1 Partition</a></li>
+                                    <li><a  href="#Step-2_Copy">Step-2 Copy</a></li>
+                                    <li><a  href="#Step-3_Grub">Step-3 Grub</a></li>
+                                    <li><a  href="#Step-4_Reboot">Step-4 Reboot</a></li>
+                                    <li><a  href="#Step-5_Grub_(again)">Step-5 Grub (again)</a></li>
+                                    <li><a  href="#Older_Versions_of_Ubuntu">Older Versions of Ubuntu</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a  href="#Debootstrap">Debootstrap</a></li>
+
+                            <li>
+                                <a  href="#Alternate_CD">Alternate CD</a>
+                                <ul>
+                                    <li><a  href="#Procedure_1">Procedure 1</a></li>
+                                    <li><a  href="#Procedure_2">Procedure 2</a></li>        
+                                </ul>
+                            </li>
+
+                            <li><a  href="#Alternate_CD_Alternate_Method">Alternate CD Alternate Method</a></li>
+
+                            <li><a  href="#Troubleshooting">Troubleshooting</a></li>
+                        </ol>
+                    </div>
+                </div>
+
+            <section class="main-section intro" id="Guide_Introduction">
+                <header class="intro-header">Guide Introduction</header>
+                <article class="intro-text" >
+                    <p>
+                        If you already have Ubuntu installed, it is easy to upgrade using the Update Manager. However, this is not<br>
+                        always safe, and it will overwrite your old system.
+                    </p>
+                    <p>
+                        If upgrading is not an option (you are running a different Linux distro than Ubuntu, or your system is<br>
+                        several versions old), or you wish to keep your old system, you should use the live Ubuntu Desktop <br>
+                        installer or Debootstrap.
+                    </p>
+                    <p>
+                        The Ubuntu Desktop installer is usually run on a DVD or a bootable USB stick. However, if you already run<br>Linux,
+                        using a DVD or USB is not necessary. You may run the Ubuntu Desktop installer directly<br>
+                        from your hard drive, or use Debootstrap.
+                    </p>
+                    <p>
+                        <strong>Note:</strong> These are advanced installation techniques and are not recommended for new users. If you are uncomfortable<br>
+                        with the command line terminal, you should create a live Ubuntu Desktop DVD or USB.
+                    </p>
+                    <p>
+                        Running the Ubuntu Desktop installer from your hard drive requires an extra partition. Debootstrap installs Ubuntu directly,<br>
+                        without using the guiding Ubuntu Desktop installer. Debootstrap does not require a DVD, USB, Ubuntu Desktop ISO, or an extra<br>
+                        installer partition.
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Live_Ubuntu_Desktop_from_Hard_Drive">
+                <header>Live Ubuntu Desktop from Hard Drive</header>
+                <article>
+                    <p>
+                        The Ubuntu Desktop installer is distributed as a .iso file - get it here. If you don't want to download an ISO, use Debootstrap.<br>
+                        If your ISO has "alternate" in its name, you are using an alternate installation image and should see the next section.
+                    </p>
+
+                    <p>
+                        <strong>Note:</strong> You will need blank hard drive space to create new partitions. If your current system partition(s)<br>
+                        take up all available space, you must create a live DVD or live USB.
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Step-1_Partition">
+                <header>Step-1 Partition</header>
+                <article>
+                    Create a new ext4 partition for the installer, using gparted. The partition must be a little larger than the install image (for<br>
+                    example, if du -h disk-image.iso returns 1.1GB, make the partition 1.2GB). Remember the name of the new partition <br>
+                    (for example, /dev/sda3).
+                </article>
+            </section>
+            
+            <section class="main-section" id="Step-2_Copy">
+                <header>Step-2 Copy</header>
+                <article>
+                    <p>
+                        Copy Ubuntu Desktop installer contents over to the new partition using the commands
+                    </p>
+                    <code>
+<pre>
+mkdir /tmp/install_cd
+mkdir /tmp/installer
+
+sudo mount disk-image.iso -o loop /tmp/install_cd
+sudo mount /dev/sda3 /tmp/installer
+
+sudo rsync -a /tmp/install_cd/. /tmp/installer
+
+sudo umount /tmp/install_cd
+sudo umount /tmp/installer
+</pre>
+                    </code>
+                    <p>
+                        Replace disk-image.iso with the path to your disk image and /dev/sda3 with the new partition.
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Step-3_Grub">
+                <header>Step-3 Grub</header>
+                <article>
+                    <p>
+                        Configure grub2. Edit the file /etc/grub.d/40_custom and add the lines
+                    </p>
+                    <p>
+                        <code>
+<pre>
+menuentry "Ubuntu Ver??? Installer" {
+set root=(hd0,3)
+linux /casper/vmlinuz.efi boot=casper ignore_uuid
+initrd /casper/initrd.lz
+}
+</pre>
+                        </code>
+                        <p>
+                            Replace Ver??? with the version number and (hd0,3) with the new partition (for example, /dev/sda3 becomes (hd0,3) because Grub 2<br>
+                            counts drives from 0, but partitions from 1).
+                        </p>
+
+                    </p>
+                    <p>Then run update-grub to rebuild the grub configuration.</p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Step-4_Reboot">
+                <header>Step-4 Reboot</header>
+                <article>
+                    Reboot, and choose "installer" from the grub boot menu, and continue as if you were installing from CD. Be sure to set the root<br>
+                    partition to another new partition, different from the installer; do not overwrite the whole drive.
+                </article>
+            </section>
+
+            <section class="main-section" id="Step-5_Grub_(again)">
+                <header>Step-5 Grub (again)</header>
+                <article>
+                    <p>
+                        The installer may not add an entry in Grub for the new version of Ubuntu. You will have to do this manually.
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Older_Versions_of_Ubuntu">
+                <header>Older Versions of Ubuntu</header>
+                <article>
+                    <p>
+                        Older verions of Ubuntu may use /casper/vmlinuz instead of /casper/vmlinuz.efi
+                    </p>
+                    <p>
+                        For even older versions of Ubuntu with grub1, change the grub configuration file (typically /etc/grub.conf or /boot/grub/menu.lst)<br>
+                        to boot from the new partition by adding the lines
+                    </p>
+                    <code >
+<pre>
+title           installer
+root            (hd0,0)
+kernel          /casper/vmlinuz boot=casper root=/dev/ram ramdisk_size=1048576 rw
+initrd          /casper/initrd.gz
+</pre>
+                    </code>
+                    <p>
+                        The first line after the title tells grub which partition contains the installer. hd0 stands for "first hard disk," and the 0 <br>
+                        following it standards for first partition. You will need to change this if your installer partition is different from /dev/sda1.<br>
+                        sdaN becomes (hd0, N-1), sdbN becomes (hd1,N-1) and so on. As you can see, grub starts counting from 0, which can be confusing.
+                    </p>
+                    <p>
+                        <strong>Note</strong> (old, for grub1) You do not need to modify the grub config of the existing linux system, if you feel uncomfortable modifying<br>
+                        an otherwise fine running system. Instead, you may create a new menu.lst file on the new partition, preferably in <br>
+                        directory /boot/grub/. Then, reboot, and when the (old) grub menu appears, press 'c' to get the grub command line. Then,<br>
+                        type: configfile (hd0,1)/boot/grub/menu.lst to switch over to your new grub menu. Tip: use the tab-key halfway typing to have grub<br>
+                        help you complete the command, or grub commands such as search or help.
+                    </p>
+                    <p>
+                        <strong>note:</strong> if you unpacked the livecd on the same disk where you want to install Ubuntu, you may run into <em>LP#288675</em>, and be unable to<br>
+                        select a partition. The workaround by Nick Spencer ("sudo umount -l -r -f /dev/sda3 or sudo umount -l -r -f /cdrom (where sda3 was<br>
+                        the device mounted as cdrom)") is a rather terrible hack, but usable as a workaround.
+                    </p>
+                    <p>
+                        <strong>note2:</strong>: Instead of using 'workaround', an alternative is to modify the file /etc/mtab by erasing the line that specifies the<br>
+                        partition where the cdrom is mounted. This way the kernel thinks that the /cdrom is not mounted and will not show the advice when<br>
+                        installing ubuntu. I think this procedure is less dangerous than the one in the previous note
+                    </p>
+                    <p>
+                        <strong>note3:</strong> Instead of the above 'workarounds', you may simply use the boot option <em>live-media=/dev/sdb1</em> or <em>LIVEMEDIA=/dev/sdb1</em>, referring<br>
+                        to the USB device holding the ISO. This would be the "bootable usb", even if your pc has a "buggy BIOS" and cannot boot from USB.<br>
+                        The running kernel can access the USB device. This boot option is documented, but unfortunately not supported by Ubuntu 11.10.<br>
+                        Use the patch I filed as bug fix, while this is not yet put back in the ISO. Warning: this implies building a new initrd.gz which<br>
+                        is not very trivial, although this forum has a good manual.
+                    </p>
+
+                </article>
+            </section>
+
+            <section class="main-section" id="Debootstrap">
+                <header>Debootstrap</header>
+                <article>
+                <p>
+                    You can install Ubuntu directly from Linux using debootstrap. Debootstrap installs some essential packages in a directory for use<br>
+                    with chroot. Note that the essential packages does not in itself make the system bootable. It just installs what you need to chroot<br>
+                    to that directory and use apt-get to install other packages which make Ubuntu usable.
+                </p>
+                <p><strong>Step 1 :</strong> First check that you have debootstrap installed.</p>
+                <code>
+<pre>
+sudo apt-get install debootstrap
+</pre>
+                </code>
+                <p>
+                    (NOTE: if you want to install a newer release than your current system, you normally need to install <br>
+                    the backported debootstrap version,</p><br>
+                <p>
+                    <strong>Step 2 :</strong>Partition device and make a filesystem.
+                </p>
+                <p>
+                    We will assume /dev/sda is the storage device for your fresh install.
+                </p>
+                <p>
+                    Remove former partitions and create the new one.
+                </p>
+                <code>
+                    <pre>
+sudo fdisk /dev/sda
+
+WARNING: DOS-compatible mode is deprecated. It's strongly recommended to
+    switch off the mode (command 'c') and change display units to
+    sectors (command 'u').
+
+Command (m for help): p
+
+Disk /dev/sda: 250.0 GB, 250000000000 bytes
+255 heads, 63 sectors/track, 30394 cylinders
+Units = cylinders of 16065 * 512 = 8225280 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x00031196
+
+Device Boot      Start         End      Blocks   Id  System
+/dev/sda1   *           1        2550    20482843+  83  Linux
+/dev/sda2            2551       30394   223656930   8e  Linux LVM
+
+Command (m for help): d
+Partition number (1-4): 1
+
+Command (m for help): d
+Selected partition 2
+
+Command (m for help): n
+Command action
+e   extended
+p   primary partition (1-4)
+p
+Partition number (1-4): 1
+First cylinder (1-30394, default 1): 
+Using default value 1
+Last cylinder, +cylinders or +size{K,M,G} (1-30394, default 30394): 
+Using default value 30394
+
+Command (m for help): p
+
+Disk /dev/sda: 250.0 GB, 250000000000 bytes
+255 heads, 63 sectors/track, 30394 cylinders
+Units = cylinders of 16065 * 512 = 8225280 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0x00031196
+
+Device Boot      Start         End      Blocks   Id  System
+/dev/sda1               1       30394   244139773+  83  Linux
+
+Command (m for help): w
+The partition table has been altered!
+
+Calling ioctl() to re-read partition table.
+
+WARNING: Re-reading the partition table failed with error 16: Device or resource busy.
+The kernel still uses the old table. The new table will be used at
+the next reboot or after you run partprobe(8) or kpartx(8)
+Syncing disks.
+                    </pre>
+                </code>
+                <p>Make the filesystem</p>
+                <code>
+                    <pre>
+sudo mkfs.ext4 /dev/sda1
+                    </pre>
+                </code><br>
+                <p><strong>Step 3 :</strong>Mount that new partition.</p>
+                <code>
+                    <pre>
+sudo mkdir /mnt/installer
+sudo mount /dev/sda1 /mnt/installer
+                    </pre>
+                </code><br>
+
+                <p><strong>Step 4 :</strong> Download and install base system packages.</p>
+                <code>
+                    <pre>
+sudo debootstrap lucid /mnt/installer
+                    </pre>
+                </code><br>
+
+                <p><strong>Step 5 :</strong> Copy files to the new install to keep your repositories</p>
+                <code>
+                    <pre>
+sudo cp /etc/apt/sources.list /mnt/installer/etc/apt/
+                    </pre>
+                </code><br>
+                
+                <p id="Review_step_6"><strong>Step 6 :</strong> Chroot to your new install</p>
+                <code>
+                    <pre>
+sudo mount --bind /dev /mnt/installer/dev
+sudo mount --bind /dev/pts /mnt/installer/dev/pts
+sudo mount -t proc proc /mnt/installer/proc
+sudo mount -t sysfs sys /mnt/installer/sys
+sudo chroot /mnt/installer
+                    </pre>
+                </code><br>
+
+                <p><strong>Step 7 :</strong>Locale and language settings To make dpkg run without warning you need to set this settings first</p>
+                <code>
+                    <pre>
+cp /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
+echo 'LANG="pt_BR.UTF-8' >  /etc/default/locale
+echo 'LANG="pt_BR:pt:us' >> /etc/default/locale
+echo 'America/Sao_Paulo' > /etc/timezone
+locale-gen pt_BR.UTF-8
+dpkg-reconfigure -f non-interactive tzdata
+## All this inside chroot!
+                    </pre>
+                </code><br>
+
+                <p><strong>Step 8 :</strong>  Upgrade the new install. Install your local "language-pack-en-base".</p>
+                <code>
+                    <pre>
+apt-get update
+apt-get install language-pack-en-base
+apt-get upgrade
+                    </pre>
+                </code>
+                <p>If you are using Software RAID and/or LVM, you should install these packages before installing a kernel:</p>
+                    <code>
+                        <pre>
+apt-get install mdadm lvm2
+                        </pre>
+                    </code><br>
+
+                <p><strong>Step 9 :</strong>Install Grub and Linux Kernel.</p>
+                <code>
+                    <pre>
+apt-get install grub-pc linux-image
+                    </pre>
+                </code><br>
+
+                <p><strong>Step 10 :</strong>  Add user and/or set root password.</p>
+                <p>To add a user and set a password for that user.</p>
+                <code>
+                    <pre>
+adduser &lt;username>
+                    </pre>
+                </code>
+
+                <p>You may also want to add your user to the sudo group so that user can run programs as root.</p>
+                <code>
+                    <pre>
+gpasswd -a &lt;username> sudo
+                    </pre>
+                </code>
+                <p>
+                    To set a root password:<br>
+                    (NOTE: You must at least set a root password if you aren't adding a user)</p>
+                <code>
+                    <pre>
+passwd
+                    </pre>
+                </code><br>
+
+                <p><strong>Step 11 :</strong> Create fstab. A simple example of fstab is</p>
+                <code>
+                    <pre>
+echo "/dev/sda1 / ext4  errors=remount-ro 0 1" >> /etc/fstab
+## Inside chroot!
+                    </pre>
+                </code>
+                <p>It should now be safe to reboot; you may want the next few things.</p><br>
+
+                <p><strong>Step 12 :</strong>If you want to access it with ssh after reboot.</p>
+                <p>Use vi or install nano to edit /etc/hostname.</p>
+                <p>Remove any text in this file and add the hostname you would like.</p>
+                <code>
+                    <pre>
+vi /etc/hostname
+
+edit /etc/network/interfaces
+
+vi /etc/network/interfaces
+                    </pre>
+                </code>
+                <p>
+                    Add these lines to /etc/network/interfaces. This will start eth0 at boot and request an IPv4 address with dhclient.
+                </p>
+                <code>
+                    <pre>
+auto eth0
+iface eth0 inet dhcp
+                    </pre>
+                </code>
+                <p>Next you need to install ssh</p>
+                <code>
+                    <pre>
+apt-get install openssh-server
+                    </pre>
+                </code>
+                <p>Your computer should be safe to reboot now. If you want the Ubuntu Gnome desktop, continue with <a href="#continue_with">Step 13</a></p><br>
+
+                <p id="continue_with"><strong>Step 13 :</strong> Install ubuntu-desktop.</p>
+                <code>
+                    <pre>
+apt-get install ubuntu-desktop ubuntu-standard
+                    </pre>
+                </code><br>
+                <strong>ToDo:</strong><br>
+                <code>
+                    <pre>
+mkswap /dev/sdbXy
+? edit /etc/hosts
+? edit default language
+? edit /etc/environment
+? edit autologin
+? edit /etc/lightdm/lightdm.conf
+                    </pre>
+                </code><br>
+
+                <p><strong>Step 14 :</strong> Reboot and keep those fingers crossed.</p><br>
+                </article>
+            </section>
+
+            <section class="main-section" id="Alternate_CD">
+                <header>Alternate CD</header>
+                <article>
+                    <p>
+                        As of December 29th 2007, the instructions above do not apply to the alternate CD provided for Ubuntu 7.10 (Gutsy Gibbon).<br>
+                        Significant changes are required. <a href="#Procedure_1">Procedure 1</a> below has been used successfully with Gutsy (Ubuntu 7.10)<br>
+                        and <a href="#Procedure_2">Procedure 2</a> with Hardy (Ubuntu 8.04).
+                    </p>
+                    <p>
+                        Before going any further please note that the alternate CD contains documentation which can help with fixing problems or adapting<br>
+                        solutions to your own situation. The documentation is located in doc/install/manual/ on the alternate CD. Please refer to that<br>
+                        documentation as needed.
+                    </p>
+                    <p>
+                        Note that Procedure 2 is potentially less disruptive because it does not call for a new partition.
+                    </p>
+                    <p>
+                        For a simpler installation method which generally does not require re-partitioning, and downloads the packages at install time<br>
+                        rather than requiring an ISO
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Procedure_1">
+                <header>Procedure 1</header>
+                <article>
+                    <p>I used the following procedure for Gutsy. It can also be used for Hardy.</p>
+                    <p>
+                        <strong>Step 1 :</strong>Use gparted to create a new primary partition and format it to ext3. You need slightly more than 700MB of free space<br>
+                        on it. 750MB should be sufficient. Let's say the name of the partition is /dev/sda1. If your new ubuntu install is going to coexist<br>
+                        with your old system, you might find it convenient to create space for your new system as well at this point using gparted.
+                    </p><br>
+                    <p>
+                        <strong>Step 2 :</strong> Copy your alternate ISO to the root of the partition you created in <strong>Step 1</strong> 1. You need to copy the ISO itself rather than the<br>
+                        contents of the ISO.
+                    </p><br>
+                    
+                    <p>
+                        <strong>Step 3 : </strong>Grab the initrd.gz and vmlinuz files found in the following sub-directory of a Ubuntu mirror:                        
+                    </p>
+                    <code>
+                        <pre>
+dists/gutsy/main/installer-i386/current/images/hd-media/
+                        </pre>
+                    </code>
+                    <p>
+                        Put these files in your newly created partition. They can be in the root of the partition or in a sub-directory.
+                    </p><br>
+                    <p id="step_4_of_procedure_1">
+                        <strong>Step 4 : </strong> Edit your grub configuration file (typically /etc/grub.conf or /boot/grub/menu.lst) to boot from the new partition<br>
+                        by adding the lines:
+                    </p>
+                    <code>
+                        <pre>
+title           installer
+root            (hd0,0)
+kernel          /install/vmlinuz root=/dev/ram ramdisk_size=1048576 rw
+initrd          /install/initrd.gz                                
+                        </pre>
+                    </code>
+                    <p>
+                        If you use LILO, see the official documentation on the alternate CD for how to configure LILO. Or you can adapt the lines above for LILO if you know Grub and LILO well.
+                    </p>
+                    <p>
+                        The first line after the title tells grub which partition contains the installer. hd0 stands for "first hard disk," and the 0<br>
+                        following it standards for first partition. You will need to change this if your installer partition is different from /dev/sda1.<br>
+                        sdaN becomes (hd0, N-1), sdbN becomes (hd1,N-1) and so on. As you can see, grub starts counting from 0, which can be confusing.<br>
+                        The paths for the kernel and the initrd were set to start with /install/ in my setup but you could put those files in the root<br>
+                        of the install partition and have them be /vmlinuz and /initrd.gz if you so wish.
+                    </p>
+                    
+                    <p>
+                        As specified in the above, the installer will run without a preseed file. The preseed tells the installer what kind of system you are<br>
+                        trying to install and it automatically selects some options for you during installation. For instance, using the ubuntu.seed file tells<br>
+                        the installer that you want to install a full "desktop" system, with Gnome and everything. If you do not select a preseed file, it is<br>
+                        unclear what the installer thinks. In my (LouisDominiqueDubeau) experience, it installs some sort of CLI or server form of Ubuntu. This <br>
+                        is not disastrous but it may not be what you want. In Hardy in particular, running the installer without a seed results in LILO installed as<br>
+                        the boot loader rather than Grub. Ugly... So it is better to select a seed. Adding the parameter file=/cdrom/preseed/ubuntu.seed to the kernel<br>
+                        line above should take care of the problem. If installing Kubuntu, select kubuntu.seed instead. Adapt to other situations as needed.
+                    </p>
+                    
+                    <p>
+                        <strong>Step 5 : </strong> Reboot, and choose "installer" from the grub boot menu, and continue as normal.
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Procedure_2">
+                <header>Procedure 2</header>
+                <article>
+                    <p>In this procedure you do not create a new partition to hold the installer. This procedure was used for Hardy. It may be adaptable<br>
+                        for Gutsy.
+                    </p>
+                    <p>
+                        <strong>Step 1 : </strong> Copy your alternate ISO to the root of any partition that the installer can mount. You need to copy the ISO itself<br>
+                        rather than the contents of the ISO. The important part here is that you must find a partition that the installer can mount, as<br>
+                        it will search during the install procedure. If you use the traditional partitioning system used by DOS since ages immemorial,<br>
+                        then any filesystem supported by Ubuntu should work. In particular ext2/ext3/ntfs/fat/vfat should all work. If you use LVM, things<br>
+                        are trickier. As of April 26th 2008, the installer is unable to find an ISO stored on a partition managed in LVM. The installer<br>
+                        can install Ubuntu in an LVM partition but in the stage at which it looks for the ISO it has not yet loaded the LVM modules so<br>
+                        it cannot find the ISO if it is on an LVM partition. An enterprising person should be able to work around that problem but by<br>
+                        default the installer won't find the ISO if it is on an LVM partition. If you have Windows installed, then the Windows partition,<br>
+                        which normally is not managed by LVM (because I don't think Windows supports LVM), can hold the ISO.
+                    </p><br>
+                    <p>
+                        <strong>Step 2 : </strong>Grab the initrd.gz and vmlinuz files found in the following subdirectory of a Ubuntu mirror:
+                    </p>
+                    <code>
+                        <pre>
+dists/hardy/main/installer-i386/current/images/hd-media/
+                        </pre>
+                    </code>
+                    <p>
+                        You will want to put these files in your normal /boot/ directory. It may be a good idea to create a subdirectory like<br>
+                        newinstall, hardy-install, or something similar.
+                    </p><br>
+                    <p>
+                        <strong>Step 3 : </strong> Read the information at <a href="#step_4_of_procedure_1">step 4 of procedure 1</a> above and then come back here: the information there will tell you<br>
+                        what hd0,0 means and will inform you about seeds, etc. Edit your grub configuration file (typically /etc/grub.conf or<br>
+                        /boot/grub/menu.lst) to boot from the new partition by adding the lines:
+                    </p>
+                    <code>
+                        <pre>
+title installer
+root (hd0,0)
+kernel /boot/newinstall/vmlinuz
+initrd /boot/newinstall/initrd.gz
+                        </pre>
+                    </code>
+                    <p>
+                        If you want a preseed file, change the kernel line to:
+                    </p>
+                    <code>
+                        <pre>
+kernel (hd0,0)/newinstall/vmlinuz file=/cdrom/preseed/ubuntu.seed
+                        </pre>
+                    </code>
+                    <p>
+                        Note that some users report working installs with grub without seeds and/or seeds not working with this method. Adapt as needed<br>
+                        to your situation.
+                    </p><br>
+                    <p>
+                        <strong>Step 4 : </strong> Reboot, and choose "installer" from the grub boot menu, and continue the installation as normal.
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Alternate_CD_Alternate_Method">
+                <header>Alternate CD Alternate Method</header>
+                <article>
+                    <p>
+                        I have a machine without a CD-ROM drive but with a network connection, and I struggled with these instructions for many days.<br>
+                        Finally, I stumbled upon some straightforward solutions which appear to work for me.
+                    </p>
+
+                    <ol>
+                        <li>
+                            Obtain Alternate CD. (This method may work for other CDs, I have not tried)
+                        </li>
+                        <li>
+                            Mount at a temporary location, as described previously.
+                        </li>
+                        <li>
+                            Copy vmlinuz and initrd.gz from mounted installation media to normal location on current linux root (the one to be replaced)
+                        </li>
+                        <li>
+                            Unmount CDROM image.
+                        </li>
+                        <li>
+                            Copy image as is to selected partition, i.e. cat "image" > /dev/hdXX
+                        </li>
+                        <li>
+                            Configure grub or LILO as above
+                        </li>
+                        <li>
+                            Reboot.
+                        </li>
+                        <li>
+                            When choosing CD-ROM drive, choose manually, do not install a driver, for the device enter the partition to which you copied the image.
+                        </li>
+                        <li>
+                            Continue installation as normal.
+                        </li>
+                    </ol>
+                    <p>
+                        So far so good! I'll let you know if it breaks later :P
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Troubleshooting">
+                <header>Troubleshooting</header>
+                <article>
+                    <p>
+                        If you are having issues installing grub, and dpkg-reconfigure grub-pc does not give you a chance to select the device you want<br>
+                        to install grub to, make sure you have mounted /dev in your chroot, <a href="#Review_step_6">Review step 6</a>.
+                    </p>
+                </article>
+            </section>
+
+                <footer>
+                    <a href="#top">Back to Top</a>
+                    <p>All the documentation in this page is taken from this <a href="https://help.ubuntu.com/community/Installation/FromLinux" target="_blank">Ubuntu website</a>
+                    </p>
+                </footer>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
