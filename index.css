@@ -2,7 +2,7 @@
 #top : TableOfContent for small & mediums
 .container : acting on behalf of hidden body
 .logo-search : kind of navigation bar
-.my-doc : after container ( kind of main ), contains
+.my-doc : after container ( kind of main ),  contains
 #main-doc or main : containing the actual documentation
 .top-table : kind of "#navbar" (table of content), 
         i did this in order to bypass the script of the challenge
