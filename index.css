@@ -132,6 +132,9 @@ body{
                 .back-to-top{
                     display: none;
                 }
+                footer a{
+                    display: none ;
+                    }
 
 
                 #top{
